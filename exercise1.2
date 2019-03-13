@@ -1,0 +1,28 @@
+Start the Python interpreter and use it as a calculator. 
+1. How many seconds are there in 42 minutes 42 seconds?
+def second_calculator(time):
+    time = time.split(" ")
+    time_seconds = int(time[0])*3600 + int(time[2])
+    print(time_seconds)
+second_calculator('42 minutes 42 seconds')
+
+2. How many miles are there in 10 kilometers?
+def miles_km(km):
+    km = int(km) *1.61
+    return km
+print(miles_km(12))
+
+3. If you run a 10 km race in 42 minutes and 42 second, what is your average pace? what is yoru average sped in miles per hour?
+
+def miles_km(km):
+    km = int(km) *1.61
+    return km
+    
+def second_calculator(time):
+    time = time.split(" ")
+    time_seconds = int(time[0]) + int(time[2])/3600
+    print(miles_km(10)/time_seconds)
+second_calculator('42 minutes 42 seconds')
+
+
+
